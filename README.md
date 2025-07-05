@@ -18,9 +18,16 @@
 2. **动态运动控制阶段**：
    - 目标：实现周期性摆动运动
    - 统计奖励：
+
+
+<div style="overflow:hidden; height:0; transition:height 0.3s ease;">
      ```math
      r = \underbrace{\exp(-(\mu-\tau_\mu)^2/s_\mu)}_{\text{均值控制}} + \underbrace{\exp(-(\sigma-\tau_\sigma)^2/s_\sigma)}_{\text{幅度调节}}
      ```
+</div>
+
+<img src="reward.png" alt="reward" style="display: block; margin: 0 auto;"/>
+
 
 3. **机器人控制扩展**：
    - 摆动运动 → 步态生成
@@ -124,6 +131,6 @@ Please use the following bibtex if you find this repo helpful and would like to 
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/zengliangjun/HumanoidVerse2}},
+  howpublished = {\url{https://github.com/zengliangjun/SRL_CARTPOLE}},
 }
 ```
